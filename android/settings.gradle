@@ -1,0 +1,6 @@
+include ':app'
+include ':capacitor-cordova-android-plugins'
+include ':demopackge'
+project(':capacitor-cordova-android-plugins').projectDir = new File('./capacitor-cordova-android-plugins/')
+project(':demopackge').projectDir = new File('../node_modules/demopackge/index.js')
+apply from: 'capacitor.settings.gradle'
